@@ -1,11 +1,11 @@
 target = "compliance/framework/aws-kms/aws-kms-key-arn.txt#2.9"
 
-# 2.9.  Identifying an an AWS KMS multi-Region identifier
+# 2.9.  Identifying an AWS KMS multi-Region identifier
 #
 # This function MUST take a single AWS KMS identifier
 # 
 # If the input starts with "arn:", this MUST return the output of
-# identifying an an AWS KMS multi-Region ARN (aws-kms-key-
+# identifying an AWS KMS multi-Region ARN (aws-kms-key-
 # arn.md#identifying-an-an-aws-kms-multi-region-arn) called with this
 # input.  If the input starts with "alias/", this an AWS KMS alias and
 # not a multi-Region key id and MUST return false.  If the input starts
@@ -23,7 +23,7 @@ This function MUST take a single AWS KMS identifier
 level = "MUST"
 quote = '''
 If the input starts with "arn:", this MUST return the output of
-identifying an an AWS KMS multi-Region ARN (aws-kms-key-
+identifying an AWS KMS multi-Region ARN (aws-kms-key-
 arn.md#identifying-an-an-aws-kms-multi-region-arn) called with this
 input.
 '''

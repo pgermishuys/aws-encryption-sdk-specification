@@ -1,6 +1,6 @@
 target = "compliance/framework/aws-kms/aws-kms-key-arn.txt#2.8"
 
-# 2.8.  Identifying an an AWS KMS multi-Region ARN
+# 2.8.  Identifying an AWS KMS multi-Region ARN
 #
 # This function MUST take a single AWS KMS ARN
 # 

@@ -69,7 +69,7 @@ AWS KMS MRK aware components can take as input any AWS KMS identifier:
 Since the alias is can be any string a customer can create an alias that started with `mrk-`.
 But an alias is not a multi-Region key.
 
-## Identifying an an AWS KMS multi-Region ARN
+## Identifying an AWS KMS multi-Region ARN
 
 This function MUST take a single AWS KMS ARN
 
@@ -82,12 +82,12 @@ this is a AWS KMS multi-Region key ARN and MUST return true.
 If resource type is “key” and resource ID does not start with “mrk-“,
 this is a (single-region) AWS KMS key ARN and MUST return false.
 
-## Identifying an an AWS KMS multi-Region identifier
+## Identifying an AWS KMS multi-Region identifier
 
 This function MUST take a single AWS KMS identifier
 
 If the input starts with "arn:",
-this MUST return the output of [identifying an an AWS KMS multi-Region ARN](aws-kms-key-arn.md#identifying-an-an-aws-kms-multi-region-arn)
+this MUST return the output of [identifying an AWS KMS multi-Region ARN](aws-kms-key-arn.md#identifying-an-aws-kms-multi-region-arn)
 called with this input.
 If the input starts with “alias/“,
 this an AWS KMS alias and not a multi-Region key id and MUST return false.
